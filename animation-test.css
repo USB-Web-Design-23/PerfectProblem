@@ -1,0 +1,41 @@
+div {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-iteration-count: 3;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+ 
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  2%  {background-color:yellow; left:200px; top:0px;}
+  4%  {background-color:blue; left:200px; top:200px;}
+  6%  {background-color:green; left:0px; top:200px;}
+  8% {background-color:red; left:0px; top:0px;}
+  12%  {background-color:yellow; left:200px; top:0px;}
+  16%  {background-color:blue; left:200px; top:200px;}
+  20%  {background-color:green; left:0px; top:200px;}
+  24% {background-color:red; left:0px; top:0px;}
+  32%  {background-color:yellow; left:200px; top:0px;}
+  40%  {background-color:blue; left:200px; top:200px;}
+  48%  {background-color:green; left:0px; top:200px;}
+  56% {background-color:red; left:0px; top:0px;}
+
+  
+  
+
+
+
+
+  
+
+
+
+
+
