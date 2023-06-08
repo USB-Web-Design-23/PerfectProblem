@@ -1,0 +1,131 @@
+@font-face {
+	font-family: belwe;
+	src: url(BelweMediumBT.ttf);
+}
+body {
+	background-color: cornflowerblue;
+	background-image: url("rain.gif");
+	font-family: belwe;
+	
+	
+}
+h1 {
+	text-align: center;
+	font-size: 60px;
+	text-shadow: 2px 2px 2px skyblue;
+	
+
+	
+}
+.div1 {
+	background-color: mediumpurple;
+	padding-left: 20px;
+	font-size: 34px;
+}
+.menu {
+
+}
+.center {
+	margin-left: auto;
+	margin-right: auto;
+
+}
+td {
+	background-color: lightslategrey;
+	padding-left: 50px;
+	padding-right: 50px;
+	
+	font-size: 50px;
+	
+
+}
+td:hover {
+	background-color: grey;
+}
+a {
+	text-decoration: none;
+	color: deepskyblue;
+
+}
+img {
+	width: 25%;
+	display:block;
+	margin-right: auto;
+	margin-left: auto;
+	
+	
+}
+img:hover {
+	animation-name: images;
+	animation-duration: 10s;
+	animation-iteration-count: 4;
+}
+
+
+
+
+}
+@keyframes images{
+	0%   {src: orchesta.jpeg}
+  	25%  {src: pnwImage1.jpeg}
+  	50%  {src: orchesta.jpeg}
+  	75%  {src: pnwImage1.jpeg}
+  	100% {src: orchesta.jpeg}
+  	
+
+}
+.thing {
+	
+	background-image: url("mtrainer.jpeg");
+	margin-right: 50%;
+	color: rgba(0,0,0,0);
+	transition: background-image 10s color 10s;
+	text-align: center;
+	font-size: 50px;
+	background-size: cover;
+}
+.thing:hover {
+	background-image: url("rain.gif");
+	color:rgba(0,0,0,1) ;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+.thing2 {
+	
+	background-image: url("olympic.jpeg");
+	margin-right: 50%;
+	color: rgba(0,0,0,0);
+	transition: background-image 10s color 10s;
+	text-align: center;
+	font-size: 50px;
+	background-size: cover;
+}
+.thing2:hover {
+	background-image: url("rain.gif");
+	color:rgba(0,0,0,1) ;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+.thing3 {
+	
+	background-image: url("fremont-troll.jpeg");
+	margin-right: 25%;
+	margin-left: 25%;
+	color: rgba(0,0,0,0);
+	animation-name: slideshow;
+	animation-duration: 16s;
+	animation-iteration-count: infinite;
+	text-align: center;
+	font-size: 50px;
+	background-size: cover;
+}
+@keyframes slideshow {
+	0% {background-image: url("fremont-troll.jpeg")}
+	25% {background-image: url("kerry-park-view.jpeg")}
+	50% {background-image: url("photo0jpg.jpeg")}
+	75% {background-image: url("pikeplace.jpeg")}
+	100% {background-image: url("fremont-troll.jpeg")}
+
+}
+
+

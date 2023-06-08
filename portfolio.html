@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio Project</title>
+	<link rel="stylesheet" type="text/css" href="portfolio.css">
+	<link rel="icon" href="icon.png">
+</head>
+
+<body onload="changePNW()">
+	<div class="head">
+	<br>
+	
+	<h1>Portfolio Project 2023</h1>
+
+	<h6>Created By Asa Lupton</h6>
+	<br>
+	</div>
+	<div class="bodyH">
+	<br>
+	<br>
+	<form>
+		
+	<table>
+		<th onclick="changePNW()"><h2>Pacific Northwest</h2></th>
+		<th onclick="changeColGuide()"><h2>Collector's Guide</h2></th>
+		<th onclick="changeBuzz()"><h2>Buzz Feed Quiz</h2></th>
+		<th onclick="changeDream()"><h2>Recurring Dream</h2></th>
+		<th onclick="changeAnimal()"><h2>Favorite Animal</h2></th>
+		
+		
+
+	</table>
+
+
+	<br>
+	
+	<h2 id="title">Collector's Guide</h2>
+	<!--<a href="Collector's Guide/main.html" target="_blank">collector's guide</a>-->
+	<br>
+	<br>
+	<br>
+
+	<table>
+		<tr>
+			<td>
+				<embed type ="text/html" src="Collector's Guide/main.html" width="450" height="450" id="link"> </embed>
+
+			</td>
+			<td><div class="paragraph"><p id="desc">ahhhhhh</p><a id="a" href="Collector's Guide/main.html" target="_blank">Link To This Website</a></div></td>
+			
+
+		</tr>
+		
+
+	</table>
+</form>
+
+
+
+
+
+
+	
+	
+	
+<h4>The history of the internet page can be found <a href="internet.html">here</a></h1>
+
+	<div class="faq">
+	<h3 id="faqt">Frequently Asked Questions</h3>
+	<table>
+	<td>
+	<ul>
+		<li>
+			Q: Where can I find citations for these pages?
+			<ul>
+				<li>A: Citations with links can be found in each project.</li>
+			</ul>
+		</li>
+		<br>
+		<li>
+			Q: What is the small website next to the info?
+			<ul>
+				<li>A: It is a embedded website, meaning it function the same as the full website.</li>
+			</ul>
+		</li>
+		
+
+	</ul>
+	</td>
+	<td>
+	<ul>
+		<li>
+			Q: What do the buttons do?
+			<ul>
+				<li>A: Each button changes the info and the embedded page and the information. </li>
+			</ul>
+		</li>
+		<br>
+		<li>
+			Q: What languages were used to create this page?
+			<ul>
+				<li>A: For this project three coding laguages were used, HTML CSS and JavaScript.</li>
+			</ul>
+		</li>
+		
+
+	</ul>
+	</td>
+	
+</table>
+<table>
+	<td>
+		<h4>For any addiational questions or inquiries reach out to portfoliosupport@aol.com and the devolopment team will answer swiftly.</h4>
+	</td>
+</table>
+
+	<br>
+	<br>
+	
+	
+	</div>
+
+	<br>
+
+	<br>
+	<br>
+	
+	
+	<br>
+	
+	</div>
+	
+	<script type="text/javascript">
+		
+
+
+		class webpage {
+			constructor(p, src, title) {
+				this.p = p;
+				this.src = src;
+				this.title = title
+			}
+			changep() {
+				document.getElementById("desc").innerHTML = this.p
+			}
+			changehref() {
+				document.getElementById("link").src = this.src
+			}
+			changetitle() {
+				document.getElementById("title").innerHTML = this.title
+			}
+			changea() {
+				document.getElementById("a").href = this.src
+			}
+			
+		}
+		const pnwp = new webpage("     This website was created as a guide to the pacific northwest.  Assigned on March third, this project aimed to test my skills in css animations and transitions.  Adding the animations and transitions was the main learning point for this project.  In this I included three main pages:  Hiking, Seattle and Mt. St. Helens.  Each of these was meant as a way to enjoy the spring with these places or activities.  ", "PNWguide/PNWGuide.html", "Pacific Northwest")
+
+
+		const colguide = new webpage("This website is the collector’s guide for genres of music.  This was a partner project, and was working with Pierre.  When we started the project the first thing we did was create a joint CSS file for all of the pages.  Then we split the work so I did two of the pages and he did two of the pages.  The point of this project was to hone our skills and knowledge about CSS and styles.  For me the hardest part of the project was doing the research and the Code part was not challenging.  ", "Collector's Guide/main.html", "Collector's Guide")
+
+
+		const buzz = new webpage(" This project was created to emulate a Buzz Feed or Sporcle type quiz.  It was a partner project and I was paired with Alex.  We decided at the start to do an information knowledge based quiz about Annie Wright schools.  We chose this style and topic because we knew a lot about the school already and it lends itself well to this project description.  The main part of this project was integrating some < form > elements in HTML and then adding JavaScript code to manipulate the data given by the form.  At the end of the page it asks for the user’s name and then calculates the score achieved on the quiz. ", "Buzz Feed Quiz/BuzzQuiz 2.html", "Buzz Feed Quiz")
+
+
+		const dream = new webpage("This was the first official project we were assigned in this class.  In this project we were tasked in recounting a recurring dream we’d had.  I chose to follow on Mr. Considine’s Grunto.  There are a total of three elements in this project.  I added an < H1 >, a < P > and a < footer >.  This presented some difficulties when assembling this into the  portfolio.  When an embedded page doesn’t have style for an element it defaults to the style of the main page meaning that it has the same background as the portfolio.  To keep the project as it was I added a <style> element and changed the background color back to white. ", "Recurring Dream/recurringDream.html", "Recurring Dream")
+
+
+		const animal = new webpage("This project was made to highlight our favorite animal and give some facts about that animal.  This project was an introduction to CSS.  Through this we were made to experiment with different styles and alterations to the basic HTML code.  The other part we focused on was creating citations using hyperlinks.  Another part of the project was focusing on the idea of divs or creating styles for a lot of different elements grouped together.  We also used img element for the first time.", "Favorite Animal/favoriteAnimal.html", "Favorite Animal")
+
+
+
+
+	function changePNW() {
+		pnwp.changep()
+		pnwp.changehref()
+		pnwp.changetitle()
+		pnwp.changea()
+	}
+	function changeColGuide() {
+		colguide.changep()
+		colguide.changehref()
+		colguide.changetitle()
+		colguide.changea()
+	}
+	function changeBuzz() {
+		buzz.changep()
+		buzz.changehref()
+		buzz.changetitle()
+		buzz.changea()
+	}
+	function changeDream() {
+		dream.changep()
+		dream.changehref()
+		dream.changetitle()
+		dream.changea()
+	}
+	function changeAnimal() {
+		animal.changep()
+		animal.changehref()
+		animal.changetitle()
+		animal.changea()
+	}
+	
+		
+			
+
+
+
+
+		
+
+
+		
+
+
+
+
+	</script>
+	
+</body>
+</html>
